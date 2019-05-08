@@ -1,4 +1,5 @@
 var express = require('express');
+var $ = require('jquery');
 
 var app = express();
 var PORT = 8080;
