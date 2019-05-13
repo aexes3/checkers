@@ -1,7 +1,8 @@
 const hrzChecker = require('../main');
+import {expect} from 'chai';
 
 describe('', () => {
-    it('', () => {
-        expects(hrzChecker()).to.do
+    it('it should say hi', () => {
+        expects(hrzChecker()).to.do.true;
     });
 });

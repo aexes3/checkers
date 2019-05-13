@@ -1,5 +1,3 @@
-
-
 let color = [
     ['red',   'red',   'red', 'red',    null,    null,    null,    null],
     ['black', 'red',   'black', 'black', 'red',   'red',   'black', 'black'],
