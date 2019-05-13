@@ -9,14 +9,20 @@ if(!process.argv[2]) {
 
 function start(filename) {
     fs.createReadStream(filename)  
-      .pipe(csv({
+    .pipe(csv({
         headers: false
-      }))
-      .on('data', (data) => {
+    }))
+    .on('data', (data) => {
         input.push(data);
-      })
-      .on('end', () => {
+    })
+    .on('end', () => {
         let results = hrzChecker(input) || vertChecker(input) || diagDown(input) || diagUp(input);
+        console.log(results)
+            if(results){
+                console.log("There was a connect four");
+            } else {
+                console.log("There wasn't a connect four");
+            }
         return results;
     });
 }
@@ -80,4 +86,10 @@ function diagUp (colorChecker){
 
 start(process.argv[2]);
 
-module.exports = hrzChecker;
+
+module.exports = {
+    hrzChecker, 
+    vertChecker, 
+    diagDown, 
+    diagUp
+                };

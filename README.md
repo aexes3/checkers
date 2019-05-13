@@ -8,9 +8,11 @@
 * Have node.js installed
 ------
 ## Running Tests
-* You will need to use npm intall to download Mocha, Chai, fs, babel-present-env, babel-register, csv-parser & require.
+* You will need to use ```npm intall``` to download Mocha, Chai, fs, babel-present-env, babel-register, csv-parser & require.
+* Once installed you can use commands ```node main.js board.js``` to run the board to see the results you've put in from the cvs file are true or false(there are four in a row in any direction)
+* For Mocha Chai tests: run the comman ```npm run test```
 ------
-# Built With
+## Built With
 * Javascript
 * Node
 * Mocha/Chai

@@ -8,7 +8,8 @@
     "csv-parser": "^2.2.0",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "require": "^2.4.20"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
